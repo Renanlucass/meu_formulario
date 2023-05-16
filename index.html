@@ -15,12 +15,13 @@
   <h1>Formulário de Cadastro</h1>
   <form class="card">
     <h2>Dados Pessoais</h2>
+
     <label for="nome">Nome:</label>
     <input type="text" id="nome" name="nome" placeholder="Informe seu nome">
-    
+
     <label for="email">E-mail:</label>
     <input type="email" id="email" name="email" placeholder="Informe seu email">
-    
+
     <label for="senha">Senha:</label>
     <input type="password" id="senha" name="senha" placeholder="Informe sua senha">
 
@@ -34,10 +35,11 @@
       <option value="F">Feminino</option>
       <option value="O">Outro</option>
     </select>
-    
+
     <h2>Endereço Completo</h2>
+
     <label for="cep">CEP:</label>
-    <input type="text" id="cep" name="cep" placeholder="Informe seu CEP">
+    <input type="text" placeholder="Digite seu CEP" name="cep" id="cep" maxlength="9">
 
     <label for="logradouro">Logradouro:</label>
     <input type="text" id="logradouro" name="logradouro" placeholder="Informe seu logradouro">
@@ -49,45 +51,19 @@
     <input type="text" id="bairro" name="bairro" placeholder="Informe seu bairro">
 
     <label for="cidade">Cidade:</label>
-    <input type="text" id="cidade" name="cidade" placeholder="Informe sua cidade">
+    <input type="text" id="localidade" name="cidade" placeholder="Informe sua cidade">
 
     <label for="estado">Estado:</label>
-    <select id="estado" name="estado">
-      <option value="" disabled selected>Selecione o estado</option>
-      <option value="AC">Acre</option>
-      <option value="AL">Alagoas</option>
-      <option value="AP">Amapá</option>
-      <option value="AM">Amazonas</option>
-      <option value="BA">Bahia</option>
-      <option value="CE">Ceará</option>
-      <option value="DF">Distrito Federal</option>
-      <option value="ES">Espírito Santo</option>
-      <option value="GO">Goiás</option>
-      <option value="MA">Maranhão</option>
-      <option value="MT">Mato Grosso</option>
-      <option value="MS">Mato Grosso do Sul</option>
-      <option value="MG">Minas Gerais</option>
-      <option value="PA">Pará</option>
-      <option value="PB">Paraíba</option>
-      <option value="PR">Paraná</option>
-      <option value="PE">Pernambuco</option>
-      <option value="PI">Piauí</option>
-      <option value="RJ">Rio de Janeiro</option>
-      <option value="RN">Rio Grande do Norte</option>
-      <option value="RS">Rio Grande do Sul</option>
-      <option value="RO">Rondônia</option>
-      <option value="RR">Roraima</option>
-      <option value="SC">Santa Catarina</option>
-      <option value="SP">São Paulo</option>
-      <option value="SE">Sergipe</option>
-      <option value="TO">Tocantins</option>
-    </select>
+    <input type="text" placeholder="Digite seu Estado" name="estado" id="uf">
 
     <div class="btn">
       <button type="submit">Enviar</button>
       <button type="reset">Limpar</button>
     </div>
+    
   </form>
+
+  <script src="cep.js"></script>
 </body>
 
 </html>
